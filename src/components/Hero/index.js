@@ -28,11 +28,11 @@ function Hero() {
         initial={{ y: 350 }}
         animate={{ y: 0 }}
         transition={{ delay: 2, duration: 2 }}
-        className=" bg-gray-100 sm:bg-transparent fixed bottom-0 left-0 sm:left-[20px] lg:left-[40px] right-0 sm:right-auto w-[100%] mx-auto sm:m-0 sm:w-auto p-5 sm:p-0"
+        className=" z-[10]  bg-transparent sm:bg-transparent fixed bottom-0 left-0 sm:left-[20px] lg:left-[40px] right-0 sm:right-auto w-[100%] mx-auto sm:m-0 sm:w-auto p-5 sm:p-0"
       >
         <ul className=' flex flex-row sm:flex-col justify-center space-x-16  sm:justify-between  sm:space-x-0  sm:space-y-6  after:hidden sm:after:content-[""]  after:mt-6 after:w-[2px] sm:after:block after:h-[90px] after:bg-primary after:mx-auto'>
           <li className=" hover:-translate-y-1 transition-all">
-            <a>
+            <a href="mailto:riliwanademola@yahoo.com">
               <svg
                 fill="#6fdcbfe6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ function Hero() {
             </a>
           </li>
           <li className=" hover:-translate-y-1 transition-all">
-            <a>
+            <a href="https://github.com/Sirlahm/">
               <svg
                 fill="#6fdcbfe6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ function Hero() {
             </a>
           </li>
           <li className=" hover:-translate-y-1 transition-all">
-            <a>
+            <a href="https://twitter.com/Reedone_Sirlahm">
               <svg
                 fill="#6fdcbfe6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,10 +73,10 @@ function Hero() {
             </a>
           </li>
           <li className=" hover:-translate-y-1 transition-all">
-            <a>
+            <a href="https://www.linkedin.com/in/ridwan-abdulsalam-81bba01b1/">
               <svg
                 fill="#6fdcbfe6"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 30 30"
                 width="30px"
                 height="30px"
@@ -88,14 +88,14 @@ function Hero() {
           </li>
         </ul>
       </motion.div>
-      <div className="  bgg h-screen md:h-[700px] ">
+      <div  className="  bgg h-screen md:h-[700px] ">
         <div className="flex h-full md:space-x-6 smd:space-x-10 max-w-6xl mx-auto px-4 md:px-6 slg:px-0 ">
           <div className="h-full w-full absolute top-0 left-0 flex-1 md:relative flex flex-col items-center">
             <motion.div
               initial={{ y: "-100vh" }}
               animate={{ y: "0", x: "0" }}
               transition={{ delay: 0.5, duration: 1 }}
-              className=" absolute right-auto  md:left-auto   xl:right-[200px] md:right-[90px]"
+              className="hide md:block absolute right-auto  md:left-auto   xl:right-[200px] md:right-[90px]"
             >
               <Lamp className="h-44 " />
             </motion.div>
@@ -105,24 +105,24 @@ function Hero() {
               initial="hidden"
               animate="visible"
               transition={{ delay: 1, duration: 2 }}
-              className="  absolute w-full md:w-auto left-[50%]  top-[70%] md:left-auto md:top-auto right-0 bottom-auto md:right-0 xl:right-[50px] md:bottom-[130px] xl:bottom-[100px] "
+              className="hide md:block absolute w-full md:w-auto left-[50%]  top-[50%] md:left-auto md:top-auto right-0 bottom-auto md:right-0 xl:right-[50px] md:bottom-[130px] xl:bottom-[100px] "
             >
               <Laptop className=" w-full h-[200px] smd:h-[230px] slg:h-[280px]  dlg:h-auto " />
             </motion.div>
           </div>
           <div className="flex-1 self-center md:pt-32 text-center md:text-left z-[2]">
-            <p className="text-3xl  font-jenthill font-semibold text-primary md:text-[#333333]">
+            <p className="text-3xl  font-jenthill font-semibold  md:text-[#333333]">
               {" "}
               👋 Hi my name is
             </p>
-            <p className="mt-2 text-[1.8rem] slg:text-[2.5rem] font-black font-mosk text-primary md:text-[#333333]">
+            <p className="mt-2 text-[1.79rem] slg:text-[2.5rem] font-black font-mosk  md:text-[#333333]">
               RIDWAN ABDULSALAM.
             </p>
-            <p className="mt-2 text-xl slg:text-2xl textStroke font-black font-mosk text-primary md:text-[#333333]">
+            <p className="mt-2 text-xl slg:text-2xl textStroke font-black font-mosk  md:text-[#333333]">
               FULLSTACK DEVELOPER (MERN)
             </p>
 
-            <p className="mt-2 text-base slg:text-xl font-mosk text-primary md:text-[#333333]">
+            <p className="mt-2 text-base slg:text-xl font-mosk  md:text-[#333333]">
               I'm a software developer having experience in Frontend and Backend
               development to develop Maintainable Responsive , User-Friendly and
               Dynamic User Interface.

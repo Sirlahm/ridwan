@@ -24,7 +24,6 @@ const tabs = [
 
 const Tabs = () => {
   const [currentTab, setCurrentTab] = useState("1");
-  console.log(currentTab);
   const handleSetTab = (e) => {
     setCurrentTab(e.target.value);
   };
@@ -32,7 +31,7 @@ const Tabs = () => {
     <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
       <div className="flex md:justify-start md:flex-col md:w-[30%]  ">
         {tabs.map((tab, i) => (
-          <button
+          <button key={i}
             className={`flex-1 md:flex-grow-0 :text-lg font-semibold px-3 py-2 border-b-4 md:border-b-0 md:border-l-4 border-[#6fdcbfe6] text-[#333333] ${
               currentTab === tab.id ? "bg-[#6fdcbfe6]  border-[#FAF4B7] " : " "
             }`}
@@ -48,7 +47,7 @@ const Tabs = () => {
         animate={{ x: 0 }}
         className=" md:w-[60%]">
         {tabs.map((tab, i) => (
-          <div>
+          <div key={i}>
             {currentTab === `${tab.id}` && (
               <div className="">
                 <p className=" text-lg sm:text-xl font-black md:text-2xl md:font-bold">

@@ -1,6 +1,8 @@
 @import url("http://fonts.cdnfonts.com/css/mosk");
 @import url("http://fonts.cdnfonts.com/css/jenthill");
 
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -46,7 +48,7 @@ a {
 }
 
 .textStroke {
-  color: transparent;
+  color: transparent !important;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #333333;
 }
@@ -110,7 +112,16 @@ a {
   top: 0;
   transform: rotate(45deg);
 }
+.fill{
+  fill: #333333;
+}
 @media only screen and (max-width: 768px) {
+  .hide{
+    display: none !important;
+  }
+  .fill{
+    fill: #dcdcdc;
+  }
   .btn {
     display: flex;
   }
@@ -119,7 +130,7 @@ a {
   }
   .textStroke {
     
-    -webkit-text-stroke-color: #6fdcbfe6;
+    -webkit-text-stroke-color: #333333;
   }
   
 }
